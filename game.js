@@ -12,7 +12,7 @@ const gameState = {
 
 function create() {
   gameState.player = this.physics.add.sprite(225, 450, 'codey').setScale(.5);
-  
+
   const platforms = this.physics.add.staticGroup();
 
   platforms.create(225, 490, 'platform').setScale(1, .3).refreshBody();
@@ -22,7 +22,7 @@ function create() {
   gameState.player.setCollideWorldBounds(true);
 
   this.physics.add.collider(gameState.player, platforms);
-  
+
 	gameState.cursors = this.input.keyboard.createCursorKeys();
 
   const bugs = this.physics.add.group();
@@ -44,13 +44,13 @@ function create() {
     gameState.score += 10;
     gameState.scoreText.setText(`Score: ${gameState.score}`);
   })
-  
+
   this.physics.add.collider(gameState.player, bugs, () => {
     bugGenLoop.destroy();
     this.physics.pause();
     this.add.text(180, 250, 'Game Over', { fontSize: '15px', fill: '#000000' });
     this.add.text(152, 270, 'Click to Restart', { fontSize: '15px', fill: '#000000' });
-    
+
 		// Add your code below:
     this.input.on('pointerup', () =>{
       gameState.score = 0;
@@ -71,8 +71,8 @@ function update() {
 
 const config = {
   type: Phaser.AUTO,
-  width:450,
-  height:500,
+  width: 450,
+  height: 500,
   backgroundColor: "b9eaff",
   physics: {
     default: 'arcade',
