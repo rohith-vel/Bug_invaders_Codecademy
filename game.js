@@ -28,7 +28,7 @@ function create() {
   const bugs = this.physics.add.group();
 
   function bugGen () {
-    const xCoord = Math.random() * 450;
+    const xCoord = Math.random() * 250;
     bugs.create(xCoord, 10, 'bug1');
   }
 
@@ -77,7 +77,7 @@ const config = {
   physics: {
     default: 'arcade',
     arcade: {
-      gravity: { y: 20 },
+      gravity: { y: 200 },
       enableBody: true,
     }
   },
