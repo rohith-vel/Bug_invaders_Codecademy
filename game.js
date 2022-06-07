@@ -28,8 +28,8 @@ function create() {
   const bugs = this.physics.add.group();
 
   function bugGen () {
-    const xCoord = Math.random() * 100;
-    bugs.create(xCoord, 10, 'bug1');
+    const xCoord = Math.random() * 450;
+    bugs.create(xCoord, 5, 'bug1');
   }
 
   const bugGenLoop = this.time.addEvent({
