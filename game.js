@@ -28,7 +28,7 @@ function create() {
   const bugs = this.physics.add.group();
 
   function bugGen () {
-    const xCoord = Math.random() * 450;
+    const xCoord = Math.random() * 300;
     bugs.create(xCoord, 10, 'bug1');
   }
 
