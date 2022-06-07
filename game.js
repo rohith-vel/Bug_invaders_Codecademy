@@ -29,7 +29,7 @@ function create() {
 
   function bugGen () {
     const xCoord = Math.random() * 450;
-    bugs.create(xCoord, 5, 'bug1');
+    bugs.create(xCoord, 10, 'bug1');
   }
 
   const bugGenLoop = this.time.addEvent({
@@ -77,7 +77,7 @@ const config = {
   physics: {
     default: 'arcade',
     arcade: {
-      gravity: { y: 200 },
+      gravity: { y: 20 },
       enableBody: true,
     }
   },
