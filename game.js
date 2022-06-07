@@ -1,5 +1,5 @@
 function preload() {
-  this.load.image('bug1', 'https://s3.amazonaws.com/codecademy-content/courses/learn-phaser/physics/bug_1.png');
+  this.load.image('bug1', 'https://www.dlf.pt/pngsn/47246/');
   this.load.image('bug2', 'https://s3.amazonaws.com/codecademy-content/courses/learn-phaser/physics/bug_2.png');
   this.load.image('bug3', 'https://s3.amazonaws.com/codecademy-content/courses/learn-phaser/physics/bug_3.png');
   this.load.image('platform', 'https://s3.amazonaws.com/codecademy-content/courses/learn-phaser/physics/platform.png');
@@ -28,7 +28,7 @@ function create() {
   const bugs = this.physics.add.group();
 
   function bugGen () {
-    const xCoord = Math.random() * 250;
+    const xCoord = Math.random() * 450;
     bugs.create(xCoord, 10, 'bug1');
   }
 
@@ -77,7 +77,7 @@ const config = {
   physics: {
     default: 'arcade',
     arcade: {
-      gravity: { y: 300 },
+      gravity: { y: 200 },
       enableBody: true,
     }
   },
