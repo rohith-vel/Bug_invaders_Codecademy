@@ -1,5 +1,5 @@
 function preload() {
-  this.load.image('bug1', 'https://s3.amazonaws.com/codecademy-content/courses/learn-phaser/physics/bug_1.png');
+  this.load.image('bug1', 'https://github.com/rohith-vel/Bug_invaders_Codecademy/blob/master/2020-09-19_12-19-27-3qvvsfa8.png');
   this.load.image('bug2', 'https://s3.amazonaws.com/codecademy-content/courses/learn-phaser/physics/bug_2.png');
   this.load.image('bug3', 'https://s3.amazonaws.com/codecademy-content/courses/learn-phaser/physics/bug_3.png');
   this.load.image('platform', 'https://s3.amazonaws.com/codecademy-content/courses/learn-phaser/physics/platform.png');
